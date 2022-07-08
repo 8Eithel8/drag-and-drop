@@ -1,11 +1,11 @@
 .informers {
     margin: 0 auto;
     max-width: 300px;
-    min-height: 850px;
     padding-top: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .informers__item {
