@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css">
     <title>Тест</title>
 </head>
 <body class="page">
@@ -12,21 +13,23 @@
         <section class="informers">
             <div class="informers__item">
                 <div class="informers__header">
-                    <a href="informers__place link">Москва</a>
-                    <a href="informers__info link" target="_blank">Подробнее</a>
+                    <a class="informers__place link" href="#">Москва</a>
+                    <a class="informers__place link" href="#" target="_blank">Подробнее</a>
                  </div>
                 <div class="weather">
                     <div class="weather__current">
-                        <img class="weather__icon" src="./image/cloudy.svg" alt="">
-                        <span class="weather__text">+22</span>
-                        <span class="weather__deg">&#176;</span>
-                    </div>
-                    <div class="weather__description">
-                        <p class="weather__type"></p>
-                        <p class="weather__humidity">
-                            Влажность
-                            <span class="weather__humidity-percent">50%</span>
-                        </p>
+                        <div class="weather__visualisation">
+                            <img class="weather__icon" src="./image/cloudy.svg" alt="">
+                            <span class="weather__text">+22</span>
+                            <span class="weather__deg">&#176;</span>
+                        </div>
+                        <div class="weather__description">
+                            <p class="weather__type"></p>
+                            <p class="weather__humidity">
+                                Влажность
+                                <span class="weather__humidity-percent">50%</span>
+                            </p>
+                        </div>
                     </div>
                     <ul class="weather__list-predict">
                         <li class="weather__item">
@@ -58,7 +61,7 @@
             </div>
 
             <div class="informers__item">
-                <ul class="exchange__list">
+                <ul class="exchange">
                     <li><a class="exchange__item link" href="#">
                         <img class="exchange__icon" src="./image/usd.svg" alt="Доллар">
                         <span class="exchange__value">61.36</span>
