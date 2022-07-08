@@ -1,3 +1,7 @@
+.weather {
+    color: #2c2d2e;
+}
+
 .weather__current {
     display: flex;
     justify-content: space-between;
