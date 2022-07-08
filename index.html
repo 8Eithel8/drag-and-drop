@@ -14,17 +14,16 @@
             <div class="informers__item">
                 <div class="informers__header">
                     <a class="informers__place link" href="#">Москва</a>
-                    <a class="informers__place link" href="#" target="_blank">Подробнее</a>
+                    <a class="informers__more link" href="#" target="_blank">Подробнее</a>
                  </div>
-                <div class="weather">
+                <a class="weather link" href="#" target="_blank">
                     <div class="weather__current">
                         <div class="weather__visualisation">
-                            <img class="weather__icon" src="./image/cloudy.svg" alt="">
-                            <span class="weather__text">+22</span>
-                            <span class="weather__deg">&#176;</span>
+                            <img class="weather__icon" src="./image/cloudy.svg" alt="Облачно">
+                            <span class="weather__temperature">+22</span><span class="weather__deg">&#176;</span>
                         </div>
                         <div class="weather__description">
-                            <p class="weather__type"></p>
+                            <p class="weather__type">Облачно</p>
                             <p class="weather__humidity">
                                 Влажность
                                 <span class="weather__humidity-percent">50%</span>
@@ -35,57 +34,66 @@
                         <li class="weather__item">
                             <p class="weather__day-time">Днем</p>
                             <div class="weather__predict">
-                                <img class="weather__icon" src="./image/cloudy.svg" alt="">
-                                <span class="weather__text">+22</span>
-                                <span class="weather__deg">&#176;</span>
+                                <img class="weather__icon weather__icon_small" src="./image/cloudy.svg" alt="Облачно">
+                                <span class="weather__temperature weather__temperature_small">+22</span><span class="weather__deg weather__deg_small">&#176;</span>
+                            </div>
+                        </li>
+                        <li class="weather__item">
+                            <p class="weather__day-time">Вечером</p>
+                            <div class="weather__predict">
+                                <img class="weather__icon weather__icon_small" src="./image/cloudy.svg" alt="Облачно">
+                                <span class="weather__temperature weather__temperature_small">+22</span><span class="weather__deg weather__deg_small">&#176;</span>
                             </div>
                         </li>
                         <li class="weather__item">
                             <p class="weather__day-time">Днем</p>
                             <div class="weather__predict">
-                                <img class="weather__icon" src="./image/cloudy.svg" alt="">
-                                <span class="weather__text">+22</span>
-                                <span class="weather__deg">&#176;</span>
-                            </div>
-                        </li>
-                        <li class="weather__item">
-                            <p class="weather__day-time">Днем</p>
-                            <div class="weather__predict">
-                                <img class="weather__icon" src="./image/cloudy.svg" alt="">
-                                <span class="weather__text">+22</span>
-                                <span class="weather__deg">&#176;</span>
+                                <img class="weather__icon weather__icon_small" src="./image/cloudy.svg" alt="Облачно">
+                                <span class="weather__temperature weather__temperature_small">+22</span><span class="weather__deg weather__deg_small">&#176;</span>
                             </div>
                         </li>
                     </ul>
-                </div>
+                </a>
             </div>
 
             <div class="informers__item">
                 <ul class="exchange">
-                    <li><a class="exchange__item link" href="#">
-                        <img class="exchange__icon" src="./image/usd.svg" alt="Доллар">
-                        <span class="exchange__value">61.36</span>
-                        <div class="exchange__state">
-                            <span class="exchange__state-value">-0.59</span>
-                            <img class="exchange__state-icon" src="./image/arrow.svg" alt="Доллар">
-                        </div>
-                    </a></li>
-                    <li><a class="exchange__item link" href="#">
-                        <img class="exchange__icon" src="./image/euro.svg" alt="Доллар">
-                        <span class="exchange__value">62.05</span>
-                        <div class="exchange__state">
-                            <span class="exchange__state-value">-1.55</span>
-                            <img class="exchange__state-icon" src="./image/arrow.svg" alt="Доллар">
-                        </div>
-                    </a></li>
-                    <li><a class="exchange__item link" href="#">
-                        <img class="exchange__icon" src="./image/oil.svg" alt="Доллар">
-                        <span class="exchange__value">105.83</span>
-                        <div class="exchange__state">
-                            <span class="exchange__state-value">-0.61</span>
-                            <img class="exchange__state-icon" src="./image/arrow.svg" alt="Доллар">
-                        </div>
-                    </a></li>
+                    <li>
+                        <a class="exchange__item link" href="#">
+                            <div>
+                                <img class="exchange__icon" src="./image/usd.svg" alt="Доллар">
+                                <span class="exchange__value">61.36</span>
+                            </div>
+                            <div class="exchange__state">
+                                <span class="exchange__state-value">-0.59</span>
+                                <img class="exchange__state-icon" src="./image/arrow.svg" alt="Стрелка вниз">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="exchange__item link" href="#">
+                            <div>
+                                <img class="exchange__icon" src="./image/euro.svg" alt="Евро">
+                                <span class="exchange__value">62.05</span>
+                            </div>
+                            <div class="exchange__state">
+                                <span class="exchange__state-value">-1.55</span>
+                                <img class="exchange__state-icon" src="./image/arrow.svg" alt="Стрелка вниз">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="exchange__item link" href="#">
+                            <div>
+                                <img class="exchange__icon" src="./image/oil.svg" alt="Нефть">
+                                <span class="exchange__value">105.83</span>
+                            </div>
+                            <div class="exchange__state">
+                                <span class="exchange__state-value">-0.61</span>
+                                <img class="exchange__state-icon" src="./image/arrow.svg" alt="Стрелка вниз">
+                            </div>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
