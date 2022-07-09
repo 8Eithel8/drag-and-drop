@@ -3,8 +3,6 @@ const links = Array.from(informers.querySelectorAll('.link'));
 const images = Array.from(informers.querySelectorAll('img'));
 
 const getElements = () => Array.from(informers.querySelectorAll('.informers__item'));
-// const dataId = Array.from(informers.querySelectorAll('[data-id]'));
-
 
 //устанавливаем значения атрибута draggable
 links.forEach((item) => item.draggable = false);
@@ -19,12 +17,10 @@ function getOrder () {
     localStorage.setItem('dataOrder', newArr);
 }
 
-
 // устанавливаем слушатели
 informers.addEventListener(`dragstart`, (evt) => {
     evt.target.classList.add(`selected`);
 });
-
 informers.addEventListener(`dragend`, (evt) => {
     evt.target.classList.remove(`selected`);
     getOrder();
@@ -66,15 +62,16 @@ informers.addEventListener(`dragover`, (evt) => {
     informers.insertBefore(activeElement, nextElement);
 });
 
+//получаем порядок из LS
+const newOrderString = localStorage.getItem('dataOrder');
+//проверяем есть ли в LS данные
+if (newOrderString) {
+    const newArrOrder = newOrderString.split('|');
 
+    //Выстраиваем в новом порядке элменты
+    const newArr = newArrOrder.map((item) => {
+        return informers.querySelector('[data-id="' + item + '"]');
+    });
 
-
-  // function getOrder () {
-  //           const order = localStorage.getItem(informersOrders);
-  //           return order ? order.split('|') : [];
-  // };
-
- //  function  () {
- //            var order = sortable.toArray();
- //            localStorage.setItem(sortable.options.group.name, order.join('|'));
- // }
+    informers.replaceChildren(...newArr);
+}
