@@ -15,6 +15,6 @@
 
 - перетаскивание элементов с помощью HTML Drag and Drop API.
 
-https://8eithel8.github.io/test/
+https://8eithel8.github.io/drag-and-drop/
 
 
